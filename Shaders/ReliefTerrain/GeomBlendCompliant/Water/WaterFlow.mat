@@ -1,0 +1,520 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WaterFlow
+  m_Shader: {fileID: 4800000, guid: ce52e09da42ccc74eb5fc1cff6fa130d, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2012
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: TERRAIN_FlowingMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 8238403a96f1dc7438313114f1ce4eed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: TERRAIN_RippleMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: TER_Cube
+      second:
+        m_Texture: {fileID: 8900000, guid: 1acb9f05f8b6ac24190f61b4ca6ec116, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: TER_Refl
+      second:
+        m_Texture: {fileID: 2800000, guid: 89807fd3eb4d06746b8e99127fae3f54, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: fb87a6d9f1021274ba65964755cc3ba4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpMapCombined
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BumpMapPerlin
+      second:
+        m_Texture: {fileID: 2800000, guid: 290d7c2deedd33f44803b2e9b422cf9d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ColorMapGlobal
+      second:
+        m_Texture: {fileID: 2800000, guid: 7d0d715b1a395244981126dc3360bf44, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FlowMap
+      second:
+        m_Texture: {fileID: 2800000, guid: f56925d41483d174a8669b885cfb32d2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FlowingMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 8238403a96f1dc7438313114f1ce4eed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _HeightMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 39e5c6ee61ba00243af0f2e1a08cc95a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _HeightMapCombined
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 9131e55c4e116df46bf4658c152940e3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ReflectionMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 9e339e68b28a13543bda753fe8e9ff6b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RippleMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SpecGlossMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 9131e55c4e116df46bf4658c152940e3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Specular
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TERRAIN_Control
+      second:
+        m_Texture: {fileID: 2800002, guid: 925325eef1545ad49ac1c7a0b0b3ff56, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TERRAIN_FlowingMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 8238403a96f1dc7438313114f1ce4eed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TERRAIN_HeightMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 6337695ac9da4b04087a90dd2dac122d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TERRAIN_RippleMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 87b672e098a28584d82865fa6f149b44, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _VerticalTexture
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _WetMask
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _WetMask2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: TERRAIN_DropletsSpeed
+      second: 10
+    - first:
+        name: TERRAIN_ExtrudeHeight
+      second: 0.03975
+    - first:
+        name: TERRAIN_Flow
+      second: 0.475
+    - first:
+        name: TERRAIN_FlowScale
+      second: 1
+    - first:
+        name: TERRAIN_FlowSpeed
+      second: 1
+    - first:
+        name: TERRAIN_FlowSpeedMap
+      second: 0.1212
+    - first:
+        name: TERRAIN_FresnelOffset
+      second: 0.2
+    - first:
+        name: TERRAIN_FresnelPow
+      second: 2
+    - first:
+        name: TERRAIN_GlobalWetness
+      second: 1
+    - first:
+        name: TERRAIN_LayerReflection
+      second: 0.7692308
+    - first:
+        name: TERRAIN_LayerWetStrength
+      second: 1
+    - first:
+        name: TERRAIN_RainIntensity
+      second: 1
+    - first:
+        name: TERRAIN_ReflDistortion
+      second: 0.05
+    - first:
+        name: TERRAIN_ReflectionRotSpeed
+      second: 0.3
+    - first:
+        name: TERRAIN_Refraction
+      second: 0.028461538
+    - first:
+        name: TERRAIN_RippleScale
+      second: 2
+    - first:
+        name: TERRAIN_WaterEdge
+      second: 2.2115386
+    - first:
+        name: TERRAIN_WaterGloss
+      second: 0.86538464
+    - first:
+        name: TERRAIN_WaterLevel
+      second: 0.7307693
+    - first:
+        name: TERRAIN_WaterLevelSlopeDamp
+      second: 0.25
+    - first:
+        name: TERRAIN_WaterOpacity
+      second: 0.09615384
+    - first:
+        name: TERRAIN_WaterSpecularity
+      second: 1
+    - first:
+        name: TERRAIN_WetDropletsStrength
+      second: 0
+    - first:
+        name: TERRAIN_WetGloss
+      second: 0.1
+    - first:
+        name: TERRAIN_WetReflection
+      second: 0.3846153
+    - first:
+        name: TERRAIN_WetRefraction
+      second: 0.09615385
+    - first:
+        name: TERRAIN_WetSpecularity
+      second: 0.15384614
+    - first:
+        name: _BumpMapGlobalScale
+      second: 0.01
+    - first:
+        name: _BumpMapPerlinBlend
+      second: 0.3
+    - first:
+        name: _BumpMapPerlinBlendA
+      second: 0.3
+    - first:
+        name: _BumpMapPerlinBlendB
+      second: 0.3
+    - first:
+        name: _DeepFlowingPower
+      second: 0
+    - first:
+        name: _DropletsSpeed
+      second: 10
+    - first:
+        name: _ExtrudeHeight
+      second: 0.04
+    - first:
+        name: _Flow
+      second: 0.26923078
+    - first:
+        name: _FlowScale
+      second: 0.25
+    - first:
+        name: _FlowSpeed
+      second: 0.21153846
+    - first:
+        name: _FlowingPower
+      second: 0
+    - first:
+        name: _FresnelPow
+      second: 0.5
+    - first:
+        name: _GlobalWetness
+      second: 1
+    - first:
+        name: _GlossMax
+      second: 1
+    - first:
+        name: _GlossMin
+      second: 0
+    - first:
+        name: _Glossiness
+      second: 0
+    - first:
+        name: _Intensity
+      second: 1
+    - first:
+        name: _Metalness
+      second: 0
+    - first:
+        name: _NormalPower
+      second: 2.5192308
+    - first:
+        name: _ReflDistortion
+      second: 0.1
+    - first:
+        name: _ReflectionRotSpeed
+      second: 0.46153846
+    - first:
+        name: _Refraction
+      second: 0.011538462
+    - first:
+        name: _RefractionPower
+      second: 0
+    - first:
+        name: _RippleScale
+      second: 1
+    - first:
+        name: _Shininess
+      second: 0.11387695
+    - first:
+        name: _Speed
+      second: 10
+    - first:
+        name: _TERRAIN_DropletsSpeed
+      second: 1
+    - first:
+        name: _TERRAIN_ExtrudeHeight
+      second: 0.049615383
+    - first:
+        name: _TERRAIN_Flow
+      second: 0.1
+    - first:
+        name: _TERRAIN_FlowScale
+      second: 1
+    - first:
+        name: _TERRAIN_FlowSpeed
+      second: 0.25
+    - first:
+        name: _TERRAIN_FresnelPow
+      second: 2
+    - first:
+        name: _TERRAIN_GlobalWetness
+      second: 1
+    - first:
+        name: _TERRAIN_LayerWetStrength
+      second: 1
+    - first:
+        name: _TERRAIN_RainIntensity
+      second: 1
+    - first:
+        name: _TERRAIN_ReflDistortion
+      second: 0.05
+    - first:
+        name: _TERRAIN_ReflectionRotSpeed
+      second: 0.3
+    - first:
+        name: _TERRAIN_Refraction
+      second: 0.02
+    - first:
+        name: _TERRAIN_RippleScale
+      second: 1
+    - first:
+        name: _TERRAIN_TERRAIN_Refraction
+      second: 0.02
+    - first:
+        name: _TERRAIN_WaterEdge
+      second: 1.7115384
+    - first:
+        name: _TERRAIN_WaterGloss
+      second: 1
+    - first:
+        name: _TERRAIN_WaterLevel
+      second: 0.5
+    - first:
+        name: _TERRAIN_WaterLevelSlopeDamp
+      second: 4
+    - first:
+        name: _TERRAIN_WaterOpacity
+      second: 0.5
+    - first:
+        name: _TERRAIN_WetReflection
+      second: 0.5
+    - first:
+        name: _TERRAIN_WetRefraction
+      second: 1
+    - first:
+        name: _TERRAIN_WetSpecularity
+      second: 0.1
+    - first:
+        name: _TERRAIN_distance_start
+      second: 0
+    - first:
+        name: _TERRAIN_distance_start_bumpglobal
+      second: 0
+    - first:
+        name: _TERRAIN_distance_transition
+      second: 20
+    - first:
+        name: _TERRAIN_distance_transition_bumpglobal
+      second: 32
+    - first:
+        name: _Tim
+      second: 0
+    - first:
+        name: _VerticalTextureGlobalBumpInfluence
+      second: 0
+    - first:
+        name: _VerticalTextureStrength
+      second: 0.5
+    - first:
+        name: _VerticalTextureTiling
+      second: 50
+    - first:
+        name: _WaterEdge
+      second: 16
+    - first:
+        name: _WaterGloss
+      second: 1
+    - first:
+        name: _WaterLevel
+      second: 0
+    - first:
+        name: _WaterLevelSlopeDamp
+      second: 0.25
+    - first:
+        name: _WaterOpacity
+      second: 0.923077
+    - first:
+        name: _WaterTransparency
+      second: 1
+    - first:
+        name: _WetFlowing
+      second: 0.5
+    - first:
+        name: _WetFlowingPower
+      second: 0.25
+    - first:
+        name: _WetReflection
+      second: 1.5
+    - first:
+        name: _WetRefraction
+      second: 0.25
+    - first:
+        name: _WetSpecularity
+      second: 1
+    - first:
+        name: _WetStrength
+      second: 1
+    - first:
+        name: _uvBlendAmount
+      second: 0.5
+    - first:
+        name: _uvBlendSaturation
+      second: 0.5
+    - first:
+        name: _uvBlendScale
+      second: 0.2
+    - first:
+        name: p0
+      second: 0.1
+    - first:
+        name: rtp_perlin_start_val
+      second: 0.6
+    m_Colors:
+    - first:
+        name: TERRAIN_ReflColorA
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: TERRAIN_ReflColorB
+      second: {r: 0.64223653, g: 0.6552754, b: 0.6940298, a: 0.5019608}
+    - first:
+        name: TERRAIN_WaterColor
+      second: {r: 0.5958045, g: 0.68128836, b: 0.6985294, a: 0.052}
+    - first:
+        name: TERRAIN_WaterSpecGloss
+      second: {r: 0.25, g: 0.25, b: 0.25, a: 0.8}
+    - first:
+        name: _Color
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _MainColor
+      second: {r: 0.4402985, g: 0.4402985, b: 0.4402985, a: 1}
+    - first:
+        name: _ReflColor
+      second: {r: 0.8443974, g: 0.8744397, b: 0.9925373, a: 1}
+    - first:
+        name: _ReflColorA
+      second: {r: 0.9477612, g: 0.9477612, b: 0.9477612, a: 1}
+    - first:
+        name: _ReflColorB
+      second: {r: 0.18957452, g: 0.20531002, b: 0.2761194, a: 0}
+    - first:
+        name: _SpecColor
+      second: {r: 0.125, g: 0.125, b: 0.125, a: 1}
+    - first:
+        name: _SpecColor1
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TERRAIN_PosSize
+      second: {r: 0, g: 0, b: 600, a: 600}
+    - first:
+        name: _TERRAIN_ReflColorA
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TERRAIN_ReflColorB
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TERRAIN_Tiling
+      second: {r: 3, g: 3, b: 0, a: 0}
+    - first:
+        name: _TERRAIN_WaterColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _WaterColor
+      second: {r: 0.43272445, g: 0.47200543, b: 0.5522388, a: 0.16078432}
